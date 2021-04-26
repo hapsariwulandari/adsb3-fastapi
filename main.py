@@ -24,7 +24,14 @@ df['rt_score'] = df['rt_score'].astype(str).astype(int)
 
 @app.get("/")
 def read_root():
-    return {"Hello":"World"}
+    return {"Welcome to Studio Ghibli API":""}
+    return {"To see average score by each director":"https://hapwul-studio-ghibli.herokuapp.com/average_score_director"}
+    return {"To see average score by each producer":"https://hapwul-studio-ghibli.herokuapp.com/average_score_producer"}   
+    return {"To show how many films released by each director":"https://hapwul-studio-ghibli.herokuapp.com/productive_director"}
+    return {"To show how many films released by each producer":"https://hapwul-studio-ghibli.herokuapp.com/productive_producer"}
+    return {"To show top five films from list":"https://hapwul-studio-ghibli.herokuapp.com/top_five"}
+    return {"To show top 10 film sorted by the longest duration":"https://hapwul-studio-ghibli.herokuapp.com/longest_film_duration"}
+    return {"To show film ranked by its score from highest to lowest":"https://hapwul-studio-ghibli.herokuapp.com/film_rank_score"}
 
 # 1. this function shows average score for films that directed by each director
 @app.get("/average_score_director")
