@@ -24,7 +24,7 @@ df['rt_score'] = df['rt_score'].astype(str).astype(int)
 
 @app.get("/")
 def read_root():
-    return {"Welcome to Studio Ghibli API":""}
+    #return {"Welcome to Studio Ghibli API":""}
     return {"To see average score by each director":"https://hapwul-studio-ghibli.herokuapp.com/average_score_director"}
     return {"To see average score by each producer":"https://hapwul-studio-ghibli.herokuapp.com/average_score_producer"}   
     return {"To show how many films released by each director":"https://hapwul-studio-ghibli.herokuapp.com/productive_director"}
