@@ -33,9 +33,6 @@ def read_root():
             "To show top 10 film sorted by the longest duration":"https://hapwul-studio-ghibli.herokuapp.com/longest_film_duration",
             "To show film ranked by its score from highest to lowest":"https://hapwul-studio-ghibli.herokuapp.com/film_rank_score"}
 
-return {'/data':'menampilkan seluruh data',
-'/apa':'menampilkan apa'}
-
 # 1. this function shows average score for films that directed by each director
 @app.get("/average_score_director")
 def average_score_director():
