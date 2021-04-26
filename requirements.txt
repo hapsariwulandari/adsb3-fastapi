@@ -1,7 +1,5 @@
 fastapi
-
 pandas
-
 uvicorn
 urllib
 json
