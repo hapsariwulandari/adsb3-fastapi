@@ -25,13 +25,16 @@ df['rt_score'] = df['rt_score'].astype(str).astype(int)
 @app.get("/")
 def read_root():
     #return {"Welcome to Studio Ghibli API":""}
-    return {{"Welcome to Studio Ghibli API":""},{"To see average score by each director":"https://hapwul-studio-ghibli.herokuapp.com/average_score_director"},
-            {"To see average score by each producer":"https://hapwul-studio-ghibli.herokuapp.com/average_score_producer"},
-            {"To show how many films released by each director":"https://hapwul-studio-ghibli.herokuapp.com/productive_director"},
-            {"To show how many films released by each producer":"https://hapwul-studio-ghibli.herokuapp.com/productive_producer"},
-            {"To show top five films from list":"https://hapwul-studio-ghibli.herokuapp.com/top_five"},
-            {"To show top 10 film sorted by the longest duration":"https://hapwul-studio-ghibli.herokuapp.com/longest_film_duration"},
-            {"To show film ranked by its score from highest to lowest":"https://hapwul-studio-ghibli.herokuapp.com/film_rank_score"}}
+    return {"Welcome to Studio Ghibli API":"","To see average score by each director":"https://hapwul-studio-ghibli.herokuapp.com/average_score_director",
+            "To see average score by each producer":"https://hapwul-studio-ghibli.herokuapp.com/average_score_producer",
+            "To show how many films released by each director":"https://hapwul-studio-ghibli.herokuapp.com/productive_director",
+            "To show how many films released by each producer":"https://hapwul-studio-ghibli.herokuapp.com/productive_producer",
+            "To show top five films from list":"https://hapwul-studio-ghibli.herokuapp.com/top_five",
+            "To show top 10 film sorted by the longest duration":"https://hapwul-studio-ghibli.herokuapp.com/longest_film_duration",
+            "To show film ranked by its score from highest to lowest":"https://hapwul-studio-ghibli.herokuapp.com/film_rank_score"}
+
+return {'/data':'menampilkan seluruh data',
+'/apa':'menampilkan apa'}
 
 # 1. this function shows average score for films that directed by each director
 @app.get("/average_score_director")
